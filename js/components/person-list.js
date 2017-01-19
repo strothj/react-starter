@@ -5,13 +5,14 @@ var Person = require('./person');
 
 var PersonList = React.createClass({
     render: function() {
-        var people = [];
-        for (var i = 0; i < 5; i++) {
-            people.push(<Person />);
-        }
         return (
             <div className="person-list">
-                {people}
+                <Person name="Derek Zoolander"
+                    imageUrl="http://vignette3.wikia.nocookie.net/thegamesrp/images/0/00/Derek_zoolander.jpg/revision/latest?cb=20141123211249"
+                    job="Male model" />
+                <Person name="Donald Knuth"
+                    imageUrl="http://www-cs-faculty.stanford.edu/~uno/don.gif"
+                    job="Clever chap" />
             </div>
         );
     }
